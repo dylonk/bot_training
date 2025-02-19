@@ -1,0 +1,7 @@
+# .gitignore
+.env
+private_key.json
+fine_tuned_t5/
+myenv/
+modal_inference.py
+fine_tuned_t5_complex
