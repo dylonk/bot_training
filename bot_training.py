@@ -87,7 +87,7 @@ def compute_metrics(pred):
 # Set up the training arguments
 training_args = TrainingArguments(
     output_dir='./results',
-    learning_rate = 1e-5, # or 1e-5 for more subtle updates
+    learning_rate = 1e-5, 
     per_device_train_batch_size=8,  # Can be much higher with shorter sequences
     num_train_epochs=2,  # Might converge faster
     warmup_steps=10,
@@ -97,7 +97,7 @@ training_args = TrainingArguments(
     remove_unused_columns=False,  # Add this line
     logging_dir='./logs',  # Save logs here
     logging_steps=50,      # Log every 50 steps
-    save_steps=100,  # This will save the model every 200 steps
+    save_steps=100,  
     save_strategy='steps',  # Save after every 'save_steps' steps
 
 )
